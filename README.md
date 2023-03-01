@@ -125,4 +125,55 @@ The relationship between the three table is illustrated in the following entity 
 
 ![5c](https://user-images.githubusercontent.com/106580846/222159139-a69a0d45-d56d-406f-956f-eef8d622a068.png)
 
+## Mission 6: Changing table structure
+#### Task 1
+Write a SQL statement that creates the Staff table with the following columns
+* StaffID: INT
+* FullName: VARCHAR(100)
+* PhoneNumber: VARCHAR(10)
+![6a](https://user-images.githubusercontent.com/106580846/222161223-2dcfa342-4d4a-4a1b-87ff-8a4ba42492cc.png)
+
+#### Task 2
+Write a SQL statement to apply the following constraints to the Staff table:
+* StaffID: INT NOT NULL and PRIMARY KEY
+* FullName: VARCHAR(100) and NOT NULL
+* PhoneNumber: INT NOT NULL
+![6b](https://user-images.githubusercontent.com/106580846/222161454-a888ae73-ebc6-4703-bf45-10ac6ff44387.png)
+
+#### Task 3
+Write a SQL statement that adds a new column called 'Role' to the Staff table with the following constraints:
+
+Role: VARCHAR(50) and NOT NULL
+![6c](https://user-images.githubusercontent.com/106580846/222161551-c6d3e1c4-f40c-45ee-a299-7cc9eeb2dcb1.png)
+
+#### Task 4
+Write a SQL statement that drops the Phone Number column from the 'Staff' table.
+
+![6d](https://user-images.githubusercontent.com/106580846/222161645-523290d2-0110-4c09-a7b3-12e376bc21ea.png)
+
+## Mission 7 Working with subqueries
+* Working with single row, multiple row and correlated subqueries.
+* Using the comparison operators and the ALL and NOT EXISTS operators with subqueries.
+
+#### Task 1: Write a SQL SELECT query to find all bookings that are due after the booking of the guest ‘Vanessa McCarthy’.
+
+![7a](https://user-images.githubusercontent.com/106580846/222162953-b2a5d790-cdee-4fc6-9a24-0859d5b8d30f.png)
+
+#### Task 2: Write a SQL SELECT query to find the menu items that are more expensive than all the 'Starters' and 'Desserts' menu item types.
+
+![7b](https://user-images.githubusercontent.com/106580846/222163257-a8cf86af-8c4e-498f-9cd4-0aafe7cbf92d.png)
+
+#### Task 3: Write a SQL SELECT query to find the menu items that costs the same as the starter menu items that are Italian cuisine.
+
+![7c](https://user-images.githubusercontent.com/106580846/222163315-b28875da-7ec9-4b2e-9bdb-469a8f4d2c7e.png)
+
+#### Task 4: Write a SQL SELECT query to find the menu items that were not ordered by the guests who placed bookings.
+
+![7d](https://user-images.githubusercontent.com/106580846/222163342-85300439-f8c3-4fff-8026-863ff943f65e.png)
+
+
+
+
+
+
 
