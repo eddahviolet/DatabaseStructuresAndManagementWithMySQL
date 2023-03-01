@@ -203,6 +203,50 @@ Write a SQL statement to delete the Orders virtual table.
 ![8di](https://user-images.githubusercontent.com/106580846/222165779-33b2ddd4-cfba-4fa9-b4fa-945cc72ee5a6.png)
 ![8dii](https://user-images.githubusercontent.com/106580846/222165816-e45d9107-18b5-4d36-8a03-961a0a583d13.png)
 
+## Mission 9: Working with MySQL functions
+Help to make it easier for M&G staff to format and filter data using MySQL string, Math, Date and Comparison functions for their reports. 
+
+Use the item and mg_orders tables
+
+#### Task 1: 
+Write a SQL SELECT query using appropriate MySQL string functions to list items, quantities and order status in the following format:
+*	Item name–quantity–order status
+*	Item name should be in lower case. Order status should be in upper case.
+
+![9a](https://user-images.githubusercontent.com/106580846/222166729-c37dc411-2aee-40fe-b062-84b49c98154d.png)
+
+#### Task 2: 
+Write a SQL SELECT query using an appropriate date function and a format string to find the name of the weekday on which M&G’s orders are to be delivered.
+
+![9b](https://user-images.githubusercontent.com/106580846/222166804-00bdc5e3-b8ab-4e2e-9f5e-74c1e812cb1a.png)
+
+#### Task 3: 
+Write a SQL SELECT query that calculates the cost of handling each order. This should be 5% of the total order cost. Use an appropriate math function to round that value to 2 decimal places.
+
+![9c](https://user-images.githubusercontent.com/106580846/222166863-11d18cd2-5aac-4a30-8c5a-e51d4286cfc3.png)
+
+####  Task 4: 
+Review the query that you wrote in the second task. Use an appropriate comparison function to filter out the records that do not have a NULL value in the delivery date column.
+
+![9d](https://user-images.githubusercontent.com/106580846/222166912-da57cc6b-9409-407e-ba42-37f829df385b.png)
+
+## Mission 10: Working with procedures
+
+Help Lucky Shrub access relevant data from the Orders table in their database using stored procedures.
+
+#### Task 1
+Write a SQL statement that creates a stored procedure called 'GetOrdersData' which retrieves all data from the Orders table.
+
+Call the “GetOrdersData” to show all orders 
+
+![10a](https://user-images.githubusercontent.com/106580846/222167545-c205dffb-8901-4f7f-958f-e527d58395b4.png)
+
+#### Task 2
+Write a SQL statement that creates a stored procedure called “GetListOfOrdersInRange” that procedure must contain two parameters that determine the range of retrieved data based on the user input of two cost values “MinimumValue” and “MaximumValue”.
+
+Call the “GetListOfOrdersInRange” to display the data of orders that cost between $150 and $600. 
+
+![10b](https://user-images.githubusercontent.com/106580846/222167907-7ff04966-7756-4187-bd06-bce51b32d4f8.png)
 
 
 
