@@ -65,7 +65,7 @@ Write a SQL SELECT statement to retrieve the number of orders placed on the same
 
 ![3d](https://user-images.githubusercontent.com/106580846/222155574-f5be8488-85e4-4d20-ae04-f1c73c6ff3e0.png)
 
-## Mission 4:  MySQL REPLACE statement
+## Mission 4: MySQL REPLACE statement
 
 #### Task 1: Write a SQL REPLACE statement that inserts two new orders with the following details:
 
@@ -89,7 +89,7 @@ Lucky Shrub have noticed that the cost of order number 9 is $5000. This is a mis
 
 ![4a](https://user-images.githubusercontent.com/106580846/222156036-3b534606-80d2-4e0b-97ec-0ca564400709.png)
 
-## Mission 5 Working with constraints
+## Mission 5: Working with constraints
 Mangata and Gallo is a jewelry store that specializes in special occasions like engagements, weddings and anniversaries. The company approached you to create three tables for their database called 'Clients', 'Orders' and 'Items' respectively. Each table must have all necessary constraints applied as specified in each task.
 
 The 'Clients' table contains the Client ID, full name and phone number of each client.
@@ -151,7 +151,7 @@ Write a SQL statement that drops the Phone Number column from the 'Staff' table.
 
 ![6d](https://user-images.githubusercontent.com/106580846/222161645-523290d2-0110-4c09-a7b3-12e376bc21ea.png)
 
-## Mission 7 Working with subqueries
+## Mission 7: Working with subqueries
 * Working with single row, multiple row and correlated subqueries.
 * Using the comparison operators and the ALL and NOT EXISTS operators with subqueries.
 
@@ -171,7 +171,37 @@ Write a SQL statement that drops the Phone Number column from the 'Staff' table.
 
 ![7d](https://user-images.githubusercontent.com/106580846/222163342-85300439-f8c3-4fff-8026-863ff943f65e.png)
 
+## Mission 8: Working with views in MySQL
+The Orders table contains information about the Order ID, Client ID, Product ID, Quantity and Cost 
 
+The main objectives of this activity are:
+
+*	Create a virtual table.
+*	Update the base table using the virtual table.
+*	Rename the virtual table.
+*	Drop the virtual table.
+
+
+#### Task 1
+Write a SQL statement to create the OrdersView Virtual table based on the Orders table to t include the following columns: Order ID, Quantity and Cost
+
+![8a](https://user-images.githubusercontent.com/106580846/222165281-51bf9477-d5ba-4a51-a3cc-3eb79fd229dc.png)
+
+#### Task 2
+Write a SQL statement that utilizes the ‘OrdersView’ virtual table to Update the base Orders table. In the UPDATE TABLE statement, change the cost to 200 where the order id equals 2. 
+
+![8b](https://user-images.githubusercontent.com/106580846/222165477-aba9106e-378e-47bf-a6f6-32784416c864.png)
+
+#### Task 3
+Write a SQL statement that changes the name of the ‘OrdersView’ virtual table to ClientsOrdersView.
+
+![8c](https://user-images.githubusercontent.com/106580846/222165753-01ed96e7-711f-4073-98f9-3f6b304942c2.png)
+
+#### Task 4
+Write a SQL statement to delete the Orders virtual table.
+
+![8di](https://user-images.githubusercontent.com/106580846/222165779-33b2ddd4-cfba-4fa9-b4fa-945cc72ee5a6.png)
+![8dii](https://user-images.githubusercontent.com/106580846/222165816-e45d9107-18b5-4d36-8a03-961a0a583d13.png)
 
 
 
