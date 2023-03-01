@@ -1,5 +1,18 @@
 # DatabaseStructuresAndManagementWithMySQL
 
+Welcome to another of my MySQL journeys, I get to interact with the following:
+*	Filter data with logical operators.
+*	Use various join types to query relevant data from multiple tables.
+*	Use MySQL alias to improve the readability of the queries.
+*	Group data from multiple tables using clauses and operators
+*	Update, insert and replace data in databases using MySQL REPLACE statement
+*	Identify and work with constraints in MySQL databases
+*	Change the structure of tables and copy table data using MySQL ALTER TABLE and COPY TABLE commands
+*	Use subqueries and complex comparison operators in a MySQL database
+*	Query data using MySQL CREATE VIEW command to create virtual tables        
+*	Use different types of functions to query data
+*	Create and deploy stored procedures in a MySQL database
+
 ## Mission 1: Filtering Data
 
 Lucky Shrub is a medium-sized garden design firm that sells indoor and outdoor plants, making them a one stop shop for clients. These tasks aim to filter data using WHERE clause and logical operators.
