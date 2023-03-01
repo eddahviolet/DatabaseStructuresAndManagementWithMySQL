@@ -89,4 +89,40 @@ Lucky Shrub have noticed that the cost of order number 9 is $5000. This is a mis
 
 ![4a](https://user-images.githubusercontent.com/106580846/222156036-3b534606-80d2-4e0b-97ec-0ca564400709.png)
 
+## Mission 5 Working with constraints
+Mangata and Gallo is a jewelry store that specializes in special occasions like engagements, weddings and anniversaries. The company approached you to create three tables for their database called 'Clients', 'Orders' and 'Items' respectively. Each table must have all necessary constraints applied as specified in each task.
+
+The 'Clients' table contains the Client ID, full name and phone number of each client.
+
+The Orders table contains information about each order's Order ID, Client ID, Item ID, Quantity and Cost.
+
+The Items table contains information about the Item ID, Item name, and Item price.
+
+The relationship between the three table is illustrated in the following entity relationship diagram (ER-D).
+
+![image](https://user-images.githubusercontent.com/106580846/222157960-f275f917-d521-4273-81c9-e09ab2a0d663.png)
+
+#### Task 1: Create the Clients table with the following columns and constraints.
+* ClientID: INT, NOT NULL and PRIMARY KEY
+* FullName: VARCHAR(100) NOT NULL
+* PhoneNumber: INT, NOT NULL and UNIQUE
+
+![5a](https://user-images.githubusercontent.com/106580846/222158944-70cd2589-e2d4-405a-af5f-e9effd751a68.png)
+
+#### Task 2: Create the Items table with the following attributes and constraints:
+* ItemID: INT, NOT NULL and PRIMARY KEY
+* ItemName: VARCHAR(100) and NOT NULL
+* Price: Decimal(5,2) and NOT NULL
+
+![5b](https://user-images.githubusercontent.com/106580846/222159025-dc063abf-0f4c-4455-b385-ac93f9c97a04.png)
+
+#### Task 3: Create the Orders table with the following constraints.
+* OrderID: INT, NOT NULL and PRIMARY KEY
+* ClientID: INT, NOT NULL and FOREIGN KEY
+* ItemID: INT, NOT NULL and FOREIGN KEY
+* Quantity: INT, NOT NULL and maximum allowed items in each order 3 only
+* COST Decimal(6,2) and NOT NULL
+
+![5c](https://user-images.githubusercontent.com/106580846/222159139-a69a0d45-d56d-406f-956f-eef8d622a068.png)
+
 
