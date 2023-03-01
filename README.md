@@ -249,5 +249,84 @@ Call the “GetListOfOrdersInRange” to display the data of orders that cost be
 ![10b](https://user-images.githubusercontent.com/106580846/222167907-7ff04966-7756-4187-bd06-bce51b32d4f8.png)
 
 
+# MySQL Database Structures & Management Project
+Based in Chicago, Illinois, Little Lemon is a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist. The chefs draw inspiration from Italian, Greek, and Turkish culture and have a menu of 12–15 items that they rotate seasonally. The restaurant has a rustic and relaxed atmosphere with moderate prices, making it a popular place for a meal any time of the day.
+
+The objective of these tasks is:
+*	Provide a recap of all topics introduced in this course.
+*	Provide experience with developing core database queries.
+
+#### Task 1: Filter data using the WHERE clause and logical operators.
+Create SQL statement to print all records from Bookings table for the following bookings dates using the BETWEEN operator: 2021-11-11, 2021-11-12 and 2021-11-13. 
+
+![f1](https://user-images.githubusercontent.com/106580846/222169331-42cb7cc5-d3a2-43ea-ab14-77838aa25fde.png)
+
+#### Task 2: Create a JOIN query.
+Create a JOIN SQL statement on the Customers and Bookings tables that prints the customers full names and related bookings IDs from the date 2021-11-11.
+
+![f2](https://user-images.githubusercontent.com/106580846/222169449-c5dcd498-c274-47af-9a68-de57dedfa9b0.png)
+
+#### Task 3: Create a GROUP BY query.
+Create a SQL statement to print the bookings dates from Bookings table to  show the total number of bookings placed on each of the printed dates using the GROUP BY BookingDate. 
+![f3](https://user-images.githubusercontent.com/106580846/222169508-c486e2ba-ae7c-4f02-b56a-2f220970520c.png)
+
+
+#### Task 4: Create a REPLACE statement.
+Create a SQL REPLACE statement that updates the cost of the Kabsa course from $17.00 to $20.00. 
+
+![f4i](https://user-images.githubusercontent.com/106580846/222169571-7de904ba-5dc8-4b20-b05d-b098b316c4ea.png)
+
+To see the new column added
+
+![f4ii](https://user-images.githubusercontent.com/106580846/222169602-2f11933e-fc26-46db-baf5-efe681df8809.png)
+
+#### Task 5: Create constraints
+Create a new table called "DeliveryAddress" in the Little Lemon database with the following columns and constraints:
+*	ID: INT PRIMARY KEY
+*	Address: VARCHAR(255) NOT NULL
+*	Type: NOT NULL DEFAULT "Private"
+*	CustomerID: INT NOT NULL FOREIGN KEY referencing CustomerID in the Customers table
+
+![f5](https://user-images.githubusercontent.com/106580846/222169868-00eff678-f3bb-46d8-a198-31595c699762.png)
+
+#### Task 6: Alter table structure
+Create a SQL statement that adds a new column called 'Ingredients' to the Courses table.
+*	Ingredients: VARCHAR(255)
+
+![f6i](https://user-images.githubusercontent.com/106580846/222169939-24311527-e3a6-45f2-8695-ead19ea7da57.png)
+
+![f6ii](https://user-images.githubusercontent.com/106580846/222169981-231cf999-148d-4f3e-be69-a19820461192.png)
+
+![f6iii](https://user-images.githubusercontent.com/106580846/222170021-66754ea5-d4f8-40a5-84ef-c03adbd68a64.png)
+
+#### Task 7: Create a subquery
+
+Create a SQL statement with a subquery that prints the full names of all customers who made bookings in the restaurant on the following date:2021-11-11.
+ 
+![f7](https://user-images.githubusercontent.com/106580846/222170577-100b6009-2b70-491f-ab11-4da608c558a7.png)
+
+#### Task 8: Create a virtual table
+
+Create the "BookingsView" virtual table to print all bookings IDs, bookings dates and the number of guests for bookings made in the restaurant before 2021-11-13 and where number of guests is larger than 3.
+
+![f8](https://user-images.githubusercontent.com/106580846/222170622-4ab3b951-610a-4834-bd17-e7eae9df125b.png)
+
+#### Task 9: Create a stored procedure
+
+Create a stored procedure called 'GetBookingsData'. The procedure must contain one date parameter called "InputDate". 
+
+Call the "GetBookingsData" with '2021-11-13' as the input date 
+
+![f9](https://user-images.githubusercontent.com/106580846/222170821-1109d43c-24d5-4898-84b8-3ae060fab477.png)
+
+
+#### Task 10: Use the String function
+
+Create a SQL SELECT query using appropriate MySQL string function to list "Booking Details" including booking ID, booking date and number of guests. The data must be listed in the same format as the following example:
+
+ID: 10, Date: 2021-11-10, Number of guests: 5
+
+![f10](https://user-images.githubusercontent.com/106580846/222170866-06bc6ee0-8514-43e8-bef3-fd9094c1f48f.png)
+
 
 
